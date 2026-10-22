@@ -1,31 +1,30 @@
 {
-    "name": "ch32v003_intmath",
-    "version": "1.0.0",
-    "description": "Thư viện toán số nguyên tốc độ cao (CORDIC Atan2, Magnitude 2D, Sqrt32) tối ưu cho CH32V003 không có FPU.",
-    "keywords": [
-        "math",
-        "intmath",
-        "integer-math",
-        "cordic",
-        "fixed-point",
-        "ch32v003",
-        "ch32v003fun"
-    ],
-    "authors": [
-        {
-            "name": "Vọc Vạch IoT",
-            "maintainer": true
-        }
-    ],
-    "frameworks": [
-        "ch32v003fun"
-    ],
-    "platforms": [
-        "ch32v"
-    ],
-    "build": {
-        "flags": [
-            "-I ."
-        ]
+  "name": "ch32v003_intmath",
+  "version": "1.0.1",
+  "description": "Thư viện toán số nguyên tốc độ cao (CORDIC Atan2, Magnitude 2D, Sqrt32) tối ưu cho CH32V003 không có FPU.",
+  "keywords": [
+    "math",
+    "intmath",
+    "integer-math",
+    "cordic",
+    "fixed-point",
+    "ch32v003",
+    "ch32v003fun"
+  ],
+  "homepage": "https://github.com/voc-vach-iot-ch32v003/ch32v003_intmath",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voc-vach-iot-ch32v003/ch32v003_intmath.git"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vọc Vạch IoT",
+      "email": "vocvachiot@gmail.com",
+      "maintainer": true
     }
+  ],
+  "frameworks": ["ch32v003fun"],
+  "platforms": ["ch32v"],
+  "dependencies": []
 }

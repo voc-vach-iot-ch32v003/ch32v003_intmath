@@ -2,8 +2,6 @@
  * @file ch32v003_intmath_defs.h
  * @author Vọc Vạch IoT
  * @brief Định nghĩa các macro và hàm hỗ trợ cho thư viện toán học số nguyên.
- * @version 1.0.0
- * @date 2026-09-19
  */
 
 #ifndef CH32V003_INTMATH_DEFS_H
@@ -41,8 +39,8 @@ MATH_SIGNED_TYPES(GENERATE_ABS_FUNC) // Gọi bảng master sinh hàm
 #define GENERATE_ABS_GENERIC(signed_t, unsigned_t, suffix) signed_t: intMathAbs##suffix,
 
 // 3. Macro tổng gọi bảng master kèm tham số xử lý cụ thể
+//    (kiểu `int` rơi vào default -> I32; không khai báo riêng để tránh trùng nhánh khi int32_t == int)
 #define intMathAbs(X_PARAM) _Generic((X_PARAM), \
-    int: intMathAbsI32, \
     MATH_SIGNED_TYPES(GENERATE_ABS_GENERIC)   \
     default: intMathAbsI32 \
 )(X_PARAM)
